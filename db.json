@@ -1,0 +1,184 @@
+{
+  "data": {
+    "structure": {
+      "id": "seo",
+      "component": "SeoContainer",
+      "properties": {},
+      "hidden": false,
+      "children": [
+        {
+          "id": "seo-header-container",
+          "component": "SeoHeaderContainer",
+          "properties": {
+            "title": "Personaliza el SEO de tu Shop",
+            "description": "El SEO (Search Engine Optimization) es una herramienta de marketing digital...",
+            "links": {
+              "publishProductLink": {
+                "text": "Publicar producto",
+                "href": "TBD"
+              }
+            },
+            "notificationMessages": {
+              "noShopPublications": "Para configurar el SEO de tu Shop, debes tener publicaciones en tu tienda."
+            },
+            "help": "Necesito ayuda",
+            "contextualHelp": {
+              "id": "TBD",
+              "title": "Ayuda / PQR",
+              "entityName": "TBD",
+              "showContextualHelp": true
+            },
+            "breadcrumb": {
+              "levels": [
+                {
+                  "id": "Mercado Shops",
+                  "text": "Mercado Shops",
+                  "href": "/mercadoshops"
+                },
+                {
+                  "id": "SEO",
+                  "text": "SEO",
+                  "href": null
+                }
+              ]
+            }
+          },
+          "hidden": false,
+          "children": []
+        },
+        {
+          "id": "seo-home",
+          "component": "SeoHomeContainer",
+          "properties": {},
+          "hidden": false,
+          "children": [
+            {
+              "id": "seo-editor-container",
+              "component": "SeoEditorContainer",
+              "properties": {},
+              "hidden": false,
+              "children": [
+                {
+                  "id": "seo-editor-header",
+                  "component": "SeoEditorHeader",
+                  "properties": {
+                    "title": "Configuración",
+                    "description": "Gracias a la configuracion de tu SEO..."
+                  },
+                  "hidden": false,
+                  "children": []
+                },
+                {
+                  "id": "seo-editor-title",
+                  "component": "SeoEditorTitle",
+                  "properties": {
+                    "name": "Título",
+                    "value": "Overhard Tienda Online - Descubrí las mejores ofertas",
+                    "placeholder": "Título de tu tienda",
+                    "bottomHelpText": "Utiliza un título corto y sencillo",
+                    "tooltip": "Promociona tu Shop usando un título directo y efectivo que plasme la idea principal de tu negocio. ",
+                    "maxlength": 60
+                  },
+                  "hidden": false,
+                  "children": []
+                },
+                {
+                  "id": "seo-editor-description",
+                  "component": "SeoEditorDescription",
+                  "properties": {
+                    "name": "Descripción",
+                    "value": "Descubre en [Nombre de tu tienda] lo que más te gusta de [tu categoría1] [tu categoría2] y [tu categoría3] con las mejores ofertas. ",
+                    "placeholder": "Agrega la descripción",
+                    "bottomHelpText": "No hagas copias textuales de otras páginas para evitar penalidades.",
+                    "tooltip": "Utiliza contenido original y persuasivo mencionando los productos o categorías más importantes de tu tienda.",
+                    "maxlength": 160
+                  },
+                  "hidden": false,
+                  "children": []
+                },
+                {
+                  "id": "seo-editor-keywords",
+                  "component": "SeoEditorKeywords",
+                  "properties": {
+                    "name": "Palabras clave",
+                    "value": "Electrodomésticos, cocina",
+                    "description": "Describen y representan tu marca y son utilizadas por un potencial comprador al realizar una búsqueda. Pueden ser palabras o frases compuestas.",
+                    "topHelpText": "Agrega palabras clave",
+                    "bottomHelpText": "Sepáralas por comas",
+                    "tooltip": "Para ayudarte en la configuración, precargamos algunas palabras clave tomadas de tu título y/o descripción.",
+                    "errorMessages": {
+                      "keyWordsLimit": "Solo puedes agregar 15 palabras clave"
+                    },
+                    "buttons": {
+                      "addButton": {
+                        "text": "Agregar"
+                      }
+                    },
+                    "links": {
+                      "clearKeywordsLink": {
+                        "text": "Limpiar palabras"
+                      }
+                    }
+                  },
+                  "hidden": false,
+                  "children": []
+                },
+                {
+                  "id": "seo-editor-robots",
+                  "component": "SeoEditorRobots",
+                  "properties": {
+                    "name": "Robots.txt",
+                    "value": "Descarga este archivo y utilízalo en Google Search Console y demás herramientas.",
+                    "links": {
+                      "downloadLink": {
+                        "text": "Descarga robots.txt",
+                        "href": "TBD"
+                      },
+                      "connectDomainLink": {
+                        "text": "Conectar dominio",
+                        "href": "TBD"
+                      }
+                    },
+                    "delegatedDomain": true,
+                    "notificationMessages": {
+                      "noDomainConnected": "Para descargar el archivo de Robots.txt conecta un dominio propio a tu Shop"
+                    }
+                  },
+                  "hidden": false,
+                  "children": []
+                },
+                {
+                  "id": "seo-editor-preview",
+                  "component": "SeoEditorPreview",
+                  "properties": {
+                    "name": "Vista previa"
+                  },
+                  "hidden": false,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "seo-buttons-container",
+              "component": "SeoButtonsContainer",
+              "properties": {},
+              "hidden": false,
+              "children": [
+                {
+                  "id": "seo-editor-button-save",
+                  "component": "SeoButtonsSave",
+                  "properties": {
+                    "value": "Guardar",
+                    "action": "TBD"
+                  },
+                  "hidden": false,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
